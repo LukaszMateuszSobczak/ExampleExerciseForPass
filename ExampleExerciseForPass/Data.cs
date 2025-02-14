@@ -18,7 +18,7 @@ namespace ExampleExerciseForPass
         private void GenerateCities()
         {
             int progress = 0;
-            Parallel.For(0, 10, i =>
+            Parallel.For(0, 100, i =>
             {
                 cities.Add(new City(i));
                 Console.Write($"\rProgress of genarating cities: {progress}%");
